@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        text-decoration: none;
+      }
+
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+        text-decoration: none;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;  
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+
+      .content {
+        padding: 16px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1a5f7a;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #4a4a4a;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        font-size: 1rem;
+        color: #4a4a4a;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: #6b46c1;
+        text-decoration: none;
+      }
+
+      a:hover, a:active {
+        color: #553c9a;
+        text-decoration: none;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .example-box {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .fun-fact {
+        background-color: #e6f3fa;
+        padding: 1rem;
+        border-left: 4px solid #04AA6D;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+      }
+
+      .image-container {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="Homepage.html" class="active">NumeracyMasterNz</a>
+      <a href="resources.html">Resources</a>
+      <a href="Moreresources.html">More Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">More Resources 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Probability.html">Probability</a>
+          <a href="Measurement.html">Measurement</a>
+          <a href="LocationandNavigation.html">Location and Navigation</a>
+          <a href="MathematicalRepresentation.html">Mathematical Representation</a>
+        </div>
+      </div>
+      <a href="ExamProtocol.html">Exam Protocol</a>
+      <a href="NzqaIntroduction.html">NZQA Introduction</a>
+      <a href="Brainbreak.html">Brain break</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="content">
+      <h2>Probability: Roll the Dice and Master Chance! 🎲</h2>
+      <p>
+        Ever wondered if you’ll score a hokey pokey ice cream from the canteen or get stuck with vanilla? That’s probability at work! In Year 10 NCEA Numeracy (US32406), probability (or “elements of chance”) is about predicting what might happen in uncertain situations, like winning a raffle or dodging rain at a rugby match. You’ll learn to calculate probabilities, run simulations, and make sense of chance in real-world Aotearoa New Zealand scenarios. This page will turn you into a probability wizard with fun examples, awesome resources, and a hefty dose of Kiwi humor. Let’s take a chance on learning!
+      </p>
+
+      <h3>What’s Probability in NCEA Numeracy?</h3>
+      <p>
+        Probability is like being able to predict what outcome will occur. It measures how likely something is to happen, from 0 (no way, José) to 1 (it’s happening, bro!). For NCEA Numeracy, you’ll calculate probabilities, use simulations to test outcomes, and interpret chance in everyday life. 
+      </p>
+      <ul>
+        <li><strong>Probability Basics:</strong> Calculate the chance of an event, like rolling a 6 on a die (<code>1/6</code>) or picking a red lolly from a bag.</li>
+        <li><strong>Simulations:</strong> Run experiments to estimate probabilities, like flipping a coin 50 times to see how often it lands on heads.</li>
+        <li><strong>Interpreting Chance:</strong> Explain what probabilities mean, like a 70% chance of rain means you should grab a jacket (and maybe a surfboard).</li>
+      </ul>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> The odds of winning a major lottery are about 1 in 14 million—better chance of spotting a kiwi bird in your backyard!
+      </div>
+
+      <h3>Why It Matters for NCEA Numeracy</h3>
+      <p>
+        In NCEA Numeracy (US32406), probability skills show you can handle uncertainty like a pro, whether it’s predicting outcomes for a school fundraiser or assessing risks for a tramping trip. The assessment checks if you can calculate probabilities accurately, run simulations, and explain your findings clearly. Plus, it’s a chance to have fun with maths and maybe predict if you’ll ace the exam (spoiler: you totally will!).
+      </p>
+      <div class="example-box">
+        <strong>Example: Canteen Lolly Bag 🍬</strong><br>
+        The school canteen sells lolly bags with 10 lollies: 4 red, 3 green, and 3 yellow. You want a red lolly. You:
+        <ul>
+          <li><strong>Probability:</strong> Calculate the chance: <code>4 red / 10 total = 0.4</code> or 40%.</li>
+          <li><strong>Simulation:</strong> Pretend to pick a lolly 20 times (use a random number generator or draw slips). If you get red 7 times, your estimated probability is <code>7/20 = 0.35</code>.</li>
+          <li><strong>Interpretation:</strong> Say, “There’s a 40% chance I’ll get a red lolly, but I might need to trade with my mate if I get yellow!”</li>
+        </ul>
+        <strong>Pro Tip:</strong> Run more simulation trials for better accuracy—20 tries is cool, but 100 is epic!
+      </div>
+      <p>
+        Watch this video to dive into probability with some laughs:
+      </p>
+      <div class="video-container">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/lVG6rqQnVu0?list=RDlVG6rqQnVu0" title="Probability Song by Numberock" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <h3>Diving into the Details</h3>
+      <p>
+        Let’s break down each part of probability with Year 10-friendly examples to keep the vibes high:
+      </p>
+      <h4>1. Probability Basics</h4>
+      <p>
+        Probability is a number between 0 and 1 that shows how likely something is. You calculate it as <code>favorable outcomes / total outcomes</code>. For example, if you roll a die, the chance of getting an even number (2, 4, or 6) is <code>3/6 = 0.5</code> or 50%.
+      </p>
+      <div class="example-box">
+        <strong>Try This:</strong> Your class raffle has 20 tickets, and 5 win a chocolate bar. Your probability of winning is <code>5/20 = 0.25</code> or 25%. Fingers crossed for that choco fix!
+      </div>
+
+      <h4>2. Simulations</h4>
+      <p>
+        Simulations are like playing a game to guess probabilities. You repeat an action (like flipping a coin or drawing cards) and record the results to estimate chances. Tools like dice, spinners, or online randomizers make it fun.
+      </p>
+      <div class="example-box">
+        <strong>Example:</strong> You want to know the chance of it raining this afternoon (50% forecast). Simulate it by flipping a coin 30 times (heads = rain, tails = no rain). If you get 14 heads, your estimated probability is <code>14/30 ≈ 0.47</code>. Close enough to pack an umbrella!
+      </div>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1621354697076-08d297d5a85e?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dice and coins">
+      </div>
+
+      <h4>3. Interpreting Chance</h4>
+      <p>
+        Interpreting probability means explaining what it means in real life. A 0.3 chance of winning a game means you might win 3 out of 10 times, so don’t bet your lunch money on it! Always connect the number to the context.
+      </p>
+      <div class="example-box">
+        <strong>Example:</strong> A weather app says there’s a 20% chance of rain during your netball game. You interpret: “It’s probably fine, but I’ll bring a jacket just in case the clouds get cheeky.”
+      </div>
+      <p>
+        Check out this video for a fun take on probability simulations:
+      </p>
+      <div class="video-container">
+        <iframe width="480" height="360" src="https://www.youtube.com/embed/QpfMwA0z_1Y" title="3D animated Math Probability Spinner Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <h3>Resources to Boost Your Probability Powers</h3>
+      <p>
+        Here are some wicked, previewable resources to make you a probability pro (and keep the fun factor high):
+      </p>
+      <ul>
+        <li><a href="https://www2.nzqa.govt.nz/assets/NCEA/LitNum/2024-exams-and-reports/32406-Numeracy-English-exam-first-assessment-2024.pdf">2024 NCEA Numeracy Paper Term 2</a> - Practice problems with probability (PDF, previewable).</li>
+        <li><a href="https://studytime.co.nz/wp-content/uploads/2024/09/Num-32406-Assessment-Event-1-Questions-Public-2023.pdf">2023 NCEA Numeracy Paper</a> - Includes chance tasks (PDF, previewable).</li>
+        <li><a href="https://www.geogebra.org/m/qfymmxnk">GeoGebra: Probability Simulator</a> - Interactive tool to test coin flips and dice rolls (play with it, it’s like a maths arcade!).</li>
+      </ul>
+
+      <h3>Tips to Be a Probability Legend</h3>
+      <p>
+        Want to ace NCEA Numeracy probability like a champ? Here’s the game plan:
+      </p>
+      <ul>
+        <li>Always write probability as a fraction, decimal, or percentage—and double-check your math!</li>
+        <li>Run simulations with lots of trials (50 or more) for better estimates.</li>
+        <li>Connect probabilities to real life, like weather or games, to make sense of them.</li>
+        <li>Use tools like GeoGebra or dice to make simulations fun and visual.</li>
+        <li>Check out past papers on NZQA’s site to see probability questions in action.</li>
+      </ul>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> The probability of you reading this sentence was 100%—congrats, you’re already winning at life!
+      </div>
+
+      <h3>Extra Fun Video Resources</h3>
+      <p>
+        Keep the good times rolling with these videos:
+      </p>
+      <ul>
+        <li><a href="https://youtu.be/Kgudt4PXs28">Ted-ED: A thought experiment on probabilty</a> - Quirky take on chance problems.</li>
+        <li><a href="https://youtu.be/OyddY7DlV58">Crash Course: Probability in Life</a> - Explanation of probability rules.</li>
+      </ul>
+    </div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  </body>
+</html>

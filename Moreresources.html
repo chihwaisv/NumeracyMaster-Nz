@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        text-decoration: none;
+      }
+
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+        text-decoration: none;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;  
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+
+      .content {
+        padding: 16px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1a5f7a;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #4a4a4a;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        font-size: 1rem;
+        color: #4a4a4a;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: #6b46c1;
+        text-decoration: none;
+      }
+
+      a:hover, a:active {
+        color: #553c9a;
+        text-decoration: none;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .example-box {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .fun-fact {
+        background-color: #e6f3fa;
+        padding: 1rem;
+        border-left: 4px solid #04AA6D;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+      }
+
+      .image-container {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="Homepage.html" class="active">NumeracyMasterNz</a>
+      <a href="resources.html">Resources</a>
+      <a href="Moreresources.html">More Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">More Resources 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Probability.html">Probability</a>
+          <a href="Measurement.html">Measurement</a>
+          <a href="LocationandNavigation.html">Location and Navigation</a>
+          <a href="MathematicalRepresentation.html">Mathematical Representation</a>
+        </div>
+      </div>
+      <a href="ExamProtocol.html">Exam Protocol</a>
+      <a href="NzqaIntroduction.html">NZQA Introduction</a>
+      <a href="Brainbreak.html">Brain break</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="content">
+      <h2>More Resources: You’re a Maths Overachiever! 🚀</h2>
+      <p>
+        Whoa, you clicked “More Resources”? You’re clearly not here to slack off, sipping flat whites and dreaming of hokey pokey ice cream—you’re ready to dive into extra NCEA Numeracy awesomeness! Unlike your mates who are probably napping, you’re a Year 10 legend hunting for more ways to smash US32406. Respect! In this page, we’ll hook you up with a treasure trove of extra resources and spill the tea on what’s hiding in those dropdown menu links (StudyIt Numeracy Guide, MathsNZ Numeracy Resources, and NZQA Numeracy Overview). Get ready to level up your maths game with fun tools, practice papers, and tips to make you the ultimate numeracy ninja!
+      </p>
+
+      <h3>What’s in the Dropdown Menu?</h3>
+      <p>
+        That sneaky “More Resources” dropdown in the nav bar is packed with gold for your NCEA Numeracy prep. Here’s the lowdown on what each link offers:
+      </p>
+      <ul>
+        <li><strong>StudyIt Numeracy Guide (<a href="https://studytime.co.nz/
+">studyit.govt.nz</a>):</strong> This is like having a wise maths sensei in your pocket. Studytime offers free, student-friendly guides for NCEA Numeracy, with tips on tackling stats, measurement, probability, and more. You’ll find practice questions, explanations, and forums to chat with other students (no, it’s not just for nerds—it’s for winners!). Perfect for brushing up on real-world problems like budgeting for a marae trip or analyzing sports data.</li>
+        <li><strong>MathsNZ Numeracy Resources (<a href="https://www.mathsnz.com/
+">mathsnz.com</a>):</strong> Think of MathsNZ as your cool maths cousin who’s got all the best resources. This site is loaded with numeracy worksheets, videos, and activities tailored to Year 10. It covers everything from map scales to probability simulations, with a Kiwi twist (think calculating the area of a rugby field). Great for hands-on practice and making maths feel like a game.</li>
+        <li><strong>NZQA Numeracy Overview (<a href="https://www2.nzqa.govt.nz/ncea/subjects/select-subject/numeracy/
+">nzqa.govt.nz</a>):</strong> This is the official boss-level resource from NZQA, the folks who set your exams. It’s got the full scoop on the US32406 standard, including what you need to know, past papers, and exemplars of top-notch student work. Use it to see exactly what the examiners want, like how to nail a probability explanation or a measurement calculation. It’s serious but super useful!</li>
+      </ul>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> Clicking “More Resources” just earned you imaginary bonus points in the “Not Lazy Club”—you’re basically the opposite of a couch potato!
+      </div>
+
+      <h3>Extra Resources to Supercharge Your Numeracy</h3>
+      <p>
+        Since you’re clearly a go-getter, here’s a stash of additional resources to keep your NCEA Numeracy prep on point. These are all previewable, so you can check them out faster than you can say “pavlova”:
+      </p>
+      <ul>
+        <li><a href="https://www2.nzqa.govt.nz/assets/NCEA/LitNum/2024-exams-and-reports/32406-Numeracy-English-exam-first-assessment-2024.pdf">2024 NCEA Numeracy Paper Term 2</a> - Dive into real exam questions on probability, measurement, and more (PDF, previewable).</li>
+        <li><a href="https://studytime.co.nz/wp-content/uploads/2024/09/Num-32406-Assessment-Event-1-Questions-Public-2023.pdf">2023 NCEA Numeracy Paper</a> - Practice with past questions to get the exam vibe (PDF, previewable).</li>
+        <li><a href="https://www.desmos.com/calculator">Desmos Graphing Calculator</a> - A free online tool to play with graphs and probability simulations. Try plotting a line or flipping virtual coins—it’s like maths meets Minecraft!</li>
+        <li><a href="https://censusatschool.org.nz/">CensusAtSchool TataurangaKiTeKura</a> - Real NZ data for stats projects, like analyzing how many students love hokey pokey ice cream. Perfect for data representation practice.</li>
+        <li><a href="https://ncea.tki.org.nz/Resources-for-Internally-Assessed-Achievement-Standards/Mathematics-and-statistics/Level-1-Mathematics-and-statistics">TKI Mathematics Resources</a> - Official guides and exemplars for numeracy, covering everything from map scales to area calculations.</li>
+      </ul>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Study resources" class="mt-6 rounded-lg shadow-md">
+      </div>
+
+      <h3>Tips to Make the Most of These Resources</h3>
+      <p>
+        You’re already a superstar for seeking out more resources, so here’s how to use them like a pro:
+      </p>
+      <ul>
+        <li><strong>Practice with Past Papers:</strong> Start with NZQA’s 2023 and 2024 papers to get comfy with exam-style questions. Time yourself for extra challenge!</li>
+        <li><strong>Use Interactive Tools:</strong> Play with Desmos or GeoGebra (linked in other pages) to visualize probability or measurement problems. It’s like gaming, but you’re learning.</li>
+        <li><strong>Explore Real Data:</strong> Use CensusAtSchool to create your own stats projects—maybe figure out if your class loves rugby more than netball.</li>
+        <li><strong>Watch Videos for Fun:</strong> MathsAntics and Numberphile (linked below) make tricky topics like probability or graphs feel like a comedy show.</li>
+        <li><strong>Check Exemplars:</strong> NZQA and TKI have sample answers from top students. See how they explain their work to steal their secrets (legally, of course).</li>
+      </ul>
+      <div class="example-box">
+        <strong>Example: Resource Hunt 🕵️‍♂️</strong><br>
+        You want to ace a probability question. You:
+        <ul>
+          <li>Check the <a href="https://www.nzqa.govt.nz/ncea/subjects/numeracy">NZQA Numeracy Overview</a> for the official standard details.</li>
+          <li>Practice with the <a href="https://www2.nzqa.govt.nz/assets/NCEA/LitNum/2024-exams-and-reports/32406-Numeracy-English-exam-first-assessment-2024.pdf">2024 paper</a>’s raffle question.</li>
+          <li>Use <a href="https://www.geogebra.org/m/HMd4zuur">GeoGebra’s Probability Simulator</a> to run a virtual raffle 100 times.</li>
+          <li>Watch <a href="https://youtu.be/KzfWUEJjG18">MathsAntics: Probability</a> for a quick refresher with laughs.</li>
+        </ul>
+        <strong>Pro Tip:</strong> Mix and match resources to keep it fresh—your brain will thank you!
+      </div>
+
+      <h3>Extra Fun Video Resources</h3>
+      <p>
+        Keep the good vibes going with these videos to make numeracy prep a party:
+      </p>
+      
+      <div class="video-container">
+        <iframe width="1236" height="695" src="https://www.youtube.com/embed/avbjpe3ytko" title="NCEA Numeracy 2023 Term 4 AS 32406 | Worked Answers" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> The probability of you becoming an NCEA Numeracy champ just skyrocketed because you’re exploring these resources—go you!
+      </div>
+    </div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  </body>
+</html>

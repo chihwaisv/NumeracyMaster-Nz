@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        text-decoration: none;
+      }
+
+      .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+        text-decoration: none;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;  
+        border: none;
+        outline: none;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        text-decoration: none;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .topnav.responsive {position: relative;}
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive .dropdown {float: none;}
+        .topnav.responsive .dropdown-content {position: relative;}
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+
+      .content {
+        padding: 16px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1a5f7a;
+        margin-bottom: 1.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+        color: #4a4a4a;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        font-size: 1rem;
+        color: #4a4a4a;
+        margin-bottom: 0.5rem;
+      }
+
+      a {
+        color: #6b46c1;
+        text-decoration: none;
+      }
+
+      a:hover, a:active {
+        color: #553c9a;
+        text-decoration: none;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .example-box {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+      }
+
+      .fun-fact {
+        background-color: #e6f3fa;
+        padding: 1rem;
+        border-left: 4px solid #04AA6D;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+      }
+
+      .image-container {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+      }
+
+      .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="Homepage.html" class="active">NumeracyMasterNz</a>
+      <a href="resources.html">Resources</a>
+      <a href="Moreresources.html">Resources</a>
+      <div class="dropdown">
+        <button class="dropbtn">More Resources 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Probability.html">Probability</a>
+          <a href="Measurement.html">Measurement</a>
+          <a href="LocationandNavigation.html">Location and Navigation</a>
+          <a href="MathematicalRepresentation.html">Mathematical Representation</a>
+
+        </div>
+      </div>
+      <a href="ExamProtocol.html">Exam Protocol</a>
+      <a href="NzqaIntroduction.html">NZQA Introduction</a>
+      <a href="Brainbreak.html">Brain break</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="content">
+      <h2>Location and Navigation: Become a Maths Map Master! 🗺️</h2>
+      <p>
+        Ready to navigate like a pirate with a treasure map or a Kiwi explorer in Aotearoa’s wilderness? In Year 10 NCEA Numeracy (US32406), location and navigation is all about knowing where you are and how to get where you’re going using maths. As outlined in <a href="https://mathspace.co/textbooks/syllabuses/Syllabus-409/topics/Topic-7262/subtopics/Subtopic-97044/?activeTab=theory">Mathspace</a>, this includes being able to know directions, understanding how to use distance and bearing from a point to represent locations, and interpreting scale on maps to determine the distance between places like your classroom and the canteen (because snacks are a priority!). This page will turn you into a navigation ninja with fun examples, epic resources, and a dash of humor. Let’s set sail!
+      </p>
+
+      <h3>What’s Location and Navigation in NCEA Numeracy?</h3>
+      <p>
+        Location and navigation is about using maths to find your way around, whether you’re planning a road trip to Rotorua or figuring out how far the rugby field is from your classroom. For NCEA Numeracy, you’ll need to master directions, distances, bearings, and map scales to solve real-world problems. It’s like being the GPS for your whānau’s next adventure, but with more brainpower and fewer “recalculating” moments.
+      </p>
+      <ul>
+        <li><strong>Directions:</strong> Knowing north, south, east, west, and everything in between (like northeast or southwest).</li>
+        <li><strong>Distance:</strong> Measuring how far apart two points are, like the length of a hike or the walk to the bus stop.</li>
+        <li><strong>Bearing:</strong> Using angles (0° to 360°) to describe direction from one point to another, like a pirate saying, “Head 045° to find the treasure!”</li>
+        <li><strong>Map Scale:</strong> Using a map’s scale (e.g., 1 cm = 1 km) to calculate real-world distances, like how far it is to the nearest fish and chip shop.</li>
+      </ul>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> Māori navigators used the stars to sail across the Pacific without GPS—talk about epic navigation skills! You’re learning the modern version, but you’re still a legend.
+      </div>
+
+      <h3>Why It Matters for NCEA Numeracy</h3>
+      <p>
+        In NCEA Numeracy (US32406), location and navigation skills show you can apply maths to practical situations in Aotearoa New Zealand. You might need to calculate the distance between two marae for a kapa haka trip or use bearings to guide your mates to a secret surf spot. The assessment checks if you can use these tools accurately and explain your thinking clearly, so let’s make it fun and nail it!
+      </p>
+      <div class="example-box">
+        <strong>Example: School Treasure Hunt 🏴‍☠️</strong><br>
+        Your teacher hides a prize in the school courtyard and gives you clues: “Start at the flagpole, walk 50 meters on a bearing of 090° (east), then 30 meters on a bearing of 180° (south).” You:
+        <ul>
+          <li><strong>Directions:</strong> Use a compass to confirm east (090°) and south (180°).</li>
+          <li><strong>Distance:</strong> Measure 50 m east, then 30 m south using a trundle wheel.</li>
+          <li><strong>Bearing:</strong> Follow the angles exactly to stay on course.</li>
+          <li><strong>Map Scale:</strong> On a school map with a scale of 1 cm = 10 m, 50 m is 5 cm, and 30 m is 3 cm. Draw your path to find the prize!</li>
+        </ul>
+        <strong>Pro Tip:</strong> Double-check your bearings, or you might end up in the principal’s office instead of the prize zone!
+      </div>
+      <p>
+        Watch this video to get the lowdown on directions and bearings with some laughs:  
+      </p>
+      <div class="video-container">
+      <iframe width="480" height="360" src="https://www.youtube.com/embed/CavAArGo7gQ" title="Direction and Bearings - Geo Skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+      </div>
+
+      <h3>Diving into the Details</h3>
+      <p>
+        Let’s break down each part of location and navigation with Year 10-friendly examples to keep the vibes high:
+      </p>
+      <h4>1. Knowing Directions</h4>
+      <p>
+        Directions are your compass for life—literally! You need to know the cardinal directions (north, south, east, west) and ordinal directions (northeast, southwest, etc.). Imagine you’re at a music festival in Auckland, and the food trucks are “northeast” of the main stage. You’ll head diagonally between north and east to find those epic tacos.
+      </p>
+      <div class="example-box">
+        <strong>Try This:</strong> Your mate says the school library is west of your classroom. You check a compass and walk straight west to find it. If you get lost, you might accidentally join the chess club instead!
+      </div>
+
+      <h4>2. Distance and Bearing</h4>
+      <p>
+        Distance is how far you need to go, and bearing is the direction in degrees (0° is north, 90° is east, 180° is south, 270° is west). Bearings are measured clockwise from north. For example, to get to the netball courts from the school gate, you might walk 200 meters on a bearing of 135° (southeast).
+      </p>
+      <div class="example-box">
+        <strong>Example:</strong> You’re at a park, and the ice cream van is 100 meters away on a bearing of 270° (west). You sprint west for 100 meters and score a hokey pokey cone. Maths = ice cream = happiness!
+      </div>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1590402494587-5c37b91df4e1?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Compass and map">
+      </div>
+
+      <h4>3. Interpreting Map Scale</h4>
+      <p>
+        Map scales let you turn tiny map measurements into real-world distances. If a map has a scale of 1:100,000, then 1 cm on the map equals 100,000 cm (1 km) in real life. This is super handy for planning trips or finding out how far the canteen is when you’re starving.
+      </p>
+      <div class="example-box">
+        <strong>Example:</strong> On a school map (scale 1 cm = 5 m), the distance from your classroom to the canteen is 10 cm. Calculate: <code>10 cm × 5 m/cm = 50 m</code>. You can make it to the canteen and back before the bell rings!
+      </div>
+      <p>
+        Check out this video for a fun take on map scales:
+      </p>
+      
+      <div class="video-container">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/K3aM0H7j_Jg" title="Y11-12 Geography: Scale and Distance on Maps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           
+      </div>
+
+      <h3>Resources to Navigate Like a Pro</h3>
+      <p>
+        Here are some wicked, previewable resources to boost your location and navigation skills (and keep the fun factor high):
+      </p>
+      <ul>
+        <li><a href="https://www2.nzqa.govt.nz/assets/NCEA/LitNum/2024-exams-and-reports/32406-Numeracy-English-exam-first-assessment-2024.pdf">2024 NCEA Numeracy Paper Term 2</a> - Practice problems with maps and directions (PDF, previewable).</li>
+        <li><a href="https://studytime.co.nz/wp-content/uploads/2024/09/Num-32406-Assessment-Event-1-Questions-Public-2023.pdf">2023 NCEA Numeracy Paper</a> - Includes navigation tasks (PDF, previewable).</li>
+        <li><a href="https://www.geogebra.org/m/ny578g8v">GeoGebra: Bearings Activity</a> - Interactive tool to practice bearings (try it, it’s like a maths game!).</li>
+        <p> Check TKI Mathematics Resources for Guides and exemplars for navigation tasks and MathsAntics: Directions and Maps has Fun videos with goofy animations to explain navigation.</p>
+
+      <h3>Tips to Be a Navigation Legend</h3>
+      <p>
+        Want to ace NCEA Numeracy navigation like a pro? Here’s the game plan:
+      </p>
+      <ul>
+        <li>Always check your compass or map to confirm directions—north isn’t just “up”!</li>
+        <li>Practice calculating distances with scales using a ruler and real maps.</li>
+        <li>Learn bearings by visualizing a clock: 90° is 3 o’clock, 180° is 6 o’clock.</li>
+        <li>Use tools like GeoGebra or Google Maps to make navigation feel like an adventure.</li>
+        <li>Dive into past papers on NZQA’s site to see how navigation questions pop up.</li>
+      </ul>
+      <div class="fun-fact">
+        <strong>Fun Fact:</strong> If you get lost in maths, just follow a bearing of 360°—it’ll bring you right back to where you started, ready to try again!
+      </div>
+
+      <h3>Extra Fun Video Resources</h3>
+      <p>
+        Keep the good times rolling with these videos:
+      </p>
+      <ul>
+        <li><a href="https://youtu.be/jyi5zW8mavs">The Organic Chemistry</a> - Quirky take on bearings and maps.</li>
+        <li><a href="https://youtu.be/mtsx8V3mE8o">Learning Junction: Maps and Navigation</a> - Hilarious explanation of real-world navigation.</li>
+      </ul>
+    <div>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+  </body>
+</html>
